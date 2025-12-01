@@ -1,13 +1,6 @@
 <!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
+  Portfolio for Aaron White - Cloud Engineer
+  Based on Simplefolio template by Jacobo Martinez
 -->
 <!DOCTYPE html>
 <html lang="en" class="sr">
@@ -17,12 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <title>Aaron White | Cloud Engineer</title>
+    <meta name="keywords" content="AaronWhiteTX, Aaron White, AWS, Cloud Engineer, Solutions Architect, Terraform, Bedrock" />
+    <meta name="description" content="Aaron White | Cloud Engineer specializing in AWS serverless architectures and production infrastructure" />
 
     <link
       rel="stylesheet"
@@ -33,12 +23,8 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
@@ -46,13 +32,13 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, I'm <span class="text-color-main">Aaron White</span>
           <br />
-          I'm the Unknown Developer.
+          Cloud Engineer | AWS Solutions Architect
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects"
+            >See My Work</a
           >
         </p>
       </div>
@@ -62,7 +48,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden">About Me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -72,21 +58,23 @@
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
-                alt="Profile Image"
               />
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Cloud engineer building production-ready serverless applications with AWS. 
+                AWS Certified Solutions Architect (SAA-C03) with hands-on experience 
+                architecting scalable, cost-optimized systems using Infrastructure as Code.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Specializing in serverless architectures, AI integrations with AWS Bedrock, 
+                and Terraform-managed infrastructure. I build solutions that balance innovation 
+                with operational excellence and cost efficiency.
               </p>
               <span class="d-flex mt-3">
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
@@ -108,31 +96,40 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 1: PlateAI -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">PlateAI</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Production-grade AI nutrition tracking app using AWS Bedrock Claude Vision for 
+                    photo-based meal analysis. Features include AI recipe generation (Vegan/Keto alternatives), 
+                    daily meal planning, and conversational nutrition coaching with context preservation.
+                  </p>
+                  <p class="mb-4">
+                    Complete infrastructure managed via Terraform with 26 AWS resources (Lambda, 5 DynamoDB 
+                    tables, S3, API Gateway, CloudFront). Engineered for cost efficiency at $1-3/month via 
+                    rate limiting and on-demand pricing.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5), Lambda (Python 3.12), DynamoDB, 
+                    S3, API Gateway, CloudFront, Terraform, ACM
                   </p>
                 </div>
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://plateai.cloud"
                 >
-                  See Live
+                  View Live
                 </a>
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/AaronWhiteTX/PlateAI"
                 >
                   Source Code
                 </a>
@@ -140,7 +137,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://plateai.cloud" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -149,9 +146,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="PlateAI Architecture"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/plate.png"
                     />
                   </div>
                 </a>
@@ -160,31 +157,40 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 2: PhotoSnap Pro -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">PhotoSnap Pro</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    Production serverless photo gallery with secure authentication, direct S3 uploads via 
+                    pre-signed URLs, and viral sharing through branded viewer pages with URL shortening 
+                    for mobile compatibility.
+                  </p>
+                  <p class="mb-4">
+                    Implemented pre-signed URL pattern for secure client-side S3 access, per-user IAM roles 
+                    with folder-level isolation, and URL shortener service with 6-character IDs and DynamoDB 
+                    TTL for automatic expiration. Native mobile share sheet integration for iOS/Android.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> Node.js 20.x, Lambda (2 functions), DynamoDB (2 tables), 
+                    S3, API Gateway HTTP, CloudFront, Route 53, IAM, STS
                   </p>
                 </div>
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://photosnap.pro"
                 >
-                  See Live
+                  View Live
                 </a>
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/AaronWhiteTX/PhotoSnapPro"
                 >
                   Source Code
                 </a>
@@ -192,7 +198,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://photosnap.pro" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -201,9 +207,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="PhotoSnap Pro Architecture"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/photo.png"
                     />
                   </div>
                 </a>
@@ -212,38 +218,149 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 3: MHA Tracker -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">MHA Tracker (Paid Bootcamp Project)</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    Housing allowance tracking SaaS application where I implemented serverless backend 
+                    infrastructure as a solutions architect contractor. Built event-driven OCR pipeline 
+                    using Lambda and Textract for receipt processing, designed multi-tenant data architecture 
+                    with DynamoDB, and integrated subscription webhooks for payment processing.
+                  </p>
+                  <p class="mb-4">
+                    Designed and deployed AppSync GraphQL API with 4 DynamoDB tables for multi-tenant data 
+                    isolation. Implemented S3 event-driven Lambda pipeline triggering Textract OCR for automated 
+                    receipt text extraction. Built subscription webhook Lambda for MemberPress payment integration. 
+                    Configured IAM roles with least-privilege access for Lambda-to-DynamoDB and Lambda-to-Textract operations.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> AppSync GraphQL, Lambda (Node.js 20.x), DynamoDB (4 tables), 
+                    S3, Amazon Textract, IAM, CloudWatch, us-west-2
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
+                
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="#!"
                 >
-                  Source Code
+                  Private Client Project
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="MHA Tracker Architecture"
+                    class="img-fluid"
+                    src="assets/MHA.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 4: KaiMate NZ -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">KaiMate NZ (Paid Bootcamp Project)</h3>
+                <div>
+                  <p class="mb-4">
+                    Food ordering SaaS platform where I designed and deployed production-grade AWS 
+                    infrastructure as the cloud engineer. Built Multi-AZ RDS PostgreSQL architecture 
+                    with enhanced monitoring, ECS container orchestration with CloudWatch Container 
+                    Insights, and multi-environment VPC design with proper subnet isolation.
+                  </p>
+                  <p class="mb-4">
+                    Deployed 3 RDS instances (1 production Multi-AZ + 2 staging) with KMS encryption 
+                    and CloudWatch logging. Configured 2 VPCs (production 10.20.0.0/16 + staging 
+                    172.31.0.0/16) with private subnets across multiple availability zones. Set up 
+                    ECS cluster with container performance monitoring and CloudTrail/Config for 
+                    compliance auditing. Work resulted in equity partnership offer (5% shares).
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> RDS PostgreSQL (Multi-AZ), ECS (Fargate), VPC, 
+                    CloudWatch (Container Insights + RDS monitoring), KMS, CloudTrail, AWS Config, 
+                    ap-southeast-2
+                  </p>
+                </div>
+                
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Bootcamp Team Project
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="KaiMate Architecture"
+                    class="img-fluid"
+                    src="assets/Kaimate.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 5: Terraform Infrastructure -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">PlateAI Infrastructure (Terraform)</h3>
+                <div>
+                  <p class="mb-4">
+                    Infrastructure as Code for PlateAI - complete AWS serverless stack managed with Terraform. 
+                    Manages 26 AWS resources including Lambda function, 5 DynamoDB tables, 2 S3 buckets, 
+                    API Gateway, CloudFront distribution, and IAM roles with least-privilege permissions.
+                  </p>
+                  <p class="mb-4">
+                    Infrastructure was imported from the live production environment with zero downtime and 
+                    zero changes applied, demonstrating ability to bring existing cloud resources under IaC 
+                    management. Complete infrastructure deployment with one command and full teardown capability 
+                    for cost control.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> Terraform, AWS (Lambda, DynamoDB, S3, API Gateway, CloudFront, 
+                    IAM, CloudWatch), Infrastructure as Code, us-east-1
+                  </p>
+                </div>
+                
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/AaronWhiteTX/Plateai-terraform"
+                >
+                  View Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/AaronWhiteTX/Plateai-terraform" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -252,9 +369,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Terraform Infrastructure"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/terraform.png"
                     />
                   </div>
                 </a>
@@ -262,6 +379,7 @@
             </div>
           </div>
           <!-- /END Project -->
+
         </div>
       </div>
     </section>
@@ -272,13 +390,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
+          <p class="contact-wrapper__text">Interested in working together?</p>
+          
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:aaronwhiteTX@gmail.com"
+            >Get In Touch</a
           >
         </div>
       </div>
@@ -292,49 +410,18 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/aaron-white-5a6a2686/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/AaronWhiteTX" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          © 2025 - Aaron White
         </p>
       </div>
     </footer>
