@@ -23,6 +23,13 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+    <style>
+      .project-wrapper__image img {
+        max-width: 800px !important;
+        width: 800px !important;
+        height: auto !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -74,7 +81,7 @@
                 with operational excellence and cost efficiency.
               </p>
               <span class="d-flex mt-3">
-                
+                <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
@@ -101,6 +108,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">PlateAI</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Personal Project - Production AWS Application</p>
                 <div>
                   <p class="mb-4">
                     Production-grade AI nutrition tracking app using AWS Bedrock Claude Vision for 
@@ -117,7 +125,7 @@
                     S3, API Gateway, CloudFront, Terraform, ACM
                   </p>
                 </div>
-                
+                <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
@@ -125,7 +133,7 @@
                 >
                   View Live
                 </a>
-                
+                <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
@@ -148,7 +156,7 @@
                     <img
                       alt="PlateAI Architecture"
                       class="img-fluid"
-                      src="assets/plate.png"
+                      src="assets/plate.svg"
                     />
                   </div>
                 </a>
@@ -157,180 +165,12 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Project 2: PhotoSnap Pro -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">PhotoSnap Pro</h3>
-                <div>
-                  <p class="mb-4">
-                    Production serverless photo gallery with secure authentication, direct S3 uploads via 
-                    pre-signed URLs, and viral sharing through branded viewer pages with URL shortening 
-                    for mobile compatibility.
-                  </p>
-                  <p class="mb-4">
-                    Implemented pre-signed URL pattern for secure client-side S3 access, per-user IAM roles 
-                    with folder-level isolation, and URL shortener service with 6-character IDs and DynamoDB 
-                    TTL for automatic expiration. Native mobile share sheet integration for iOS/Android.
-                  </p>
-                  <p class="mb-4">
-                    <strong>Tech Stack:</strong> Node.js 20.x, Lambda (2 functions), DynamoDB (2 tables), 
-                    S3, API Gateway HTTP, CloudFront, Route 53, IAM, STS
-                  </p>
-                </div>
-                
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://photosnap.pro"
-                >
-                  View Live
-                </a>
-                
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/AaronWhiteTX/PhotoSnapPro"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://photosnap.pro" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="PhotoSnap Pro Architecture"
-                      class="img-fluid"
-                      src="assets/photo.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Project 3: MHA Tracker -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">MHA Tracker (Paid Bootcamp Project)</h3>
-                <div>
-                  <p class="mb-4">
-                    Housing allowance tracking SaaS application where I implemented serverless backend 
-                    infrastructure as a solutions architect contractor. Built event-driven OCR pipeline 
-                    using Lambda and Textract for receipt processing, designed multi-tenant data architecture 
-                    with DynamoDB, and integrated subscription webhooks for payment processing.
-                  </p>
-                  <p class="mb-4">
-                    Designed and deployed AppSync GraphQL API with 4 DynamoDB tables for multi-tenant data 
-                    isolation. Implemented S3 event-driven Lambda pipeline triggering Textract OCR for automated 
-                    receipt text extraction. Built subscription webhook Lambda for MemberPress payment integration. 
-                    Configured IAM roles with least-privilege access for Lambda-to-DynamoDB and Lambda-to-Textract operations.
-                  </p>
-                  <p class="mb-4">
-                    <strong>Tech Stack:</strong> AppSync GraphQL, Lambda (Node.js 20.x), DynamoDB (4 tables), 
-                    S3, Amazon Textract, IAM, CloudWatch, us-west-2
-                  </p>
-                </div>
-                
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Private Client Project
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <img
-                    alt="MHA Tracker Architecture"
-                    class="img-fluid"
-                    src="assets/MHA.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Project 4: KaiMate NZ -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">KaiMate NZ (Paid Bootcamp Project)</h3>
-                <div>
-                  <p class="mb-4">
-                    Food ordering SaaS platform where I designed and deployed production-grade AWS 
-                    infrastructure as the cloud engineer. Built Multi-AZ RDS PostgreSQL architecture 
-                    with enhanced monitoring, ECS container orchestration with CloudWatch Container 
-                    Insights, and multi-environment VPC design with proper subnet isolation.
-                  </p>
-                  <p class="mb-4">
-                    Deployed 3 RDS instances (1 production Multi-AZ + 2 staging) with KMS encryption 
-                    and CloudWatch logging. Configured 2 VPCs (production 10.20.0.0/16 + staging 
-                    172.31.0.0/16) with private subnets across multiple availability zones. Set up 
-                    ECS cluster with container performance monitoring and CloudTrail/Config for 
-                    compliance auditing. Work resulted in equity partnership offer (5% shares).
-                  </p>
-                  <p class="mb-4">
-                    <strong>Tech Stack:</strong> RDS PostgreSQL (Multi-AZ), ECS (Fargate), VPC, 
-                    CloudWatch (Container Insights + RDS monitoring), KMS, CloudTrail, AWS Config, 
-                    ap-southeast-2
-                  </p>
-                </div>
-                
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Bootcamp Team Project
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <img
-                    alt="KaiMate Architecture"
-                    class="img-fluid"
-                    src="assets/Kaimate.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Project 5: Terraform Infrastructure -->
+          <!-- Project 2: PlateAI Infrastructure (Terraform) -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">PlateAI Infrastructure (Terraform)</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Infrastructure as Code - Production Deployment</p>
                 <div>
                   <p class="mb-4">
                     Infrastructure as Code for PlateAI - complete AWS serverless stack managed with Terraform. 
@@ -348,7 +188,7 @@
                     IAM, CloudWatch), Infrastructure as Code, us-east-1
                   </p>
                 </div>
-                
+                <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
@@ -380,6 +220,178 @@
           </div>
           <!-- /END Project -->
 
+          <!-- Project 3: KaiMate NZ -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">KaiMate NZ</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Contract Cloud Engineer - Production Infrastructure (Team Project, 5% Equity)</p>
+                <div>
+                  <p class="mb-4">
+                    Food ordering SaaS platform where I designed and deployed production-grade AWS 
+                    infrastructure as the cloud engineer. Built Multi-AZ RDS PostgreSQL architecture 
+                    with enhanced monitoring, ECS container orchestration with CloudWatch Container 
+                    Insights, and multi-environment VPC design with proper subnet isolation.
+                  </p>
+                  <p class="mb-4">
+                    Deployed 3 RDS instances (1 production Multi-AZ + 2 staging) with KMS encryption 
+                    and CloudWatch logging. Configured 2 VPCs (production 10.20.0.0/16 + staging 
+                    172.31.0.0/16) with private subnets across multiple availability zones. Set up 
+                    ECS cluster with container performance monitoring and CloudTrail/Config for 
+                    compliance auditing. Work resulted in equity partnership offer (5% shares).
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> RDS PostgreSQL (Multi-AZ), ECS (Fargate), VPC, 
+                    CloudWatch (Container Insights + RDS monitoring), KMS, CloudTrail, AWS Config, 
+                    ap-southeast-2
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Private Client Project
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="KaiMate Architecture"
+                    class="img-fluid"
+                    src="assets/Kaimate.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 4: MHA Tracker -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">MHA Tracker</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Contract Cloud Engineer - Multi-Tenant SaaS (Team Project)</p>
+                <div>
+                  <p class="mb-4">
+                    Housing allowance tracking SaaS application where I implemented serverless backend 
+                    infrastructure as a solutions architect contractor. Built event-driven OCR pipeline 
+                    using Lambda and Textract for receipt processing, designed multi-tenant data architecture 
+                    with DynamoDB, and integrated subscription webhooks for payment processing.
+                  </p>
+                  <p class="mb-4">
+                    Designed and deployed AppSync GraphQL API with 4 DynamoDB tables for multi-tenant data 
+                    isolation. Implemented S3 event-driven Lambda pipeline triggering Textract OCR for automated 
+                    receipt text extraction. Built subscription webhook Lambda for MemberPress payment integration. 
+                    Configured IAM roles with least-privilege access for Lambda-to-DynamoDB and Lambda-to-Textract operations.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> AppSync GraphQL, Lambda (Node.js 20.x), DynamoDB (4 tables), 
+                    S3, Amazon Textract, IAM, CloudWatch, us-west-2
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Private Client Project
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="MHA Tracker Architecture"
+                    class="img-fluid"
+                    src="assets/MHA.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 5: PhotoSnap Pro -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">PhotoSnap Pro</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Personal Project - Serverless Photo Platform</p>
+                <div>
+                  <p class="mb-4">
+                    Production serverless photo gallery with secure authentication, direct S3 uploads via 
+                    pre-signed URLs, and viral sharing through branded viewer pages with URL shortening 
+                    for mobile compatibility.
+                  </p>
+                  <p class="mb-4">
+                    Implemented pre-signed URL pattern for secure client-side S3 access, per-user IAM roles 
+                    with folder-level isolation, and URL shortener service with 6-character IDs and DynamoDB 
+                    TTL for automatic expiration. Native mobile share sheet integration for iOS/Android.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> Node.js 20.x, Lambda (2 functions), DynamoDB (2 tables), 
+                    S3, API Gateway HTTP, CloudFront, Route 53, IAM, STS
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://photosnap.pro"
+                >
+                  View Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/AaronWhiteTX/PhotoSnapPro"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://photosnap.pro" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="PhotoSnap Pro Architecture"
+                      class="img-fluid"
+                      src="assets/photo.svg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
         </div>
       </div>
     </section>
@@ -391,7 +403,7 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper__text">Interested in working together?</p>
-          
+          <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
