@@ -44,9 +44,9 @@
           Cloud Engineer | AWS Solutions Architect
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects"
-            >See My Work</a
-          >
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects">
+            See My Work
+          </a>
         </p>
       </div>
     </section>
@@ -62,7 +62,6 @@
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
-                height="auto"
                 width="300px"
                 src="assets/profile.jpg"
               />
@@ -71,14 +70,14 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                Cloud engineer building production-ready AWS applications and infrastructure. 
-                AWS Certified Solutions Architect (SAA-C03) with hands-on experience 
-                architecting scalable, cost-optimized systems using Infrastructure as Code.
+                Cloud engineer building <strong>production-ready AWS applications and infrastructure</strong>.
+                AWS Certified Solutions Architect (SAA-C03) with hands-on experience delivering
+                scalable, cost-optimized systems using Infrastructure as Code.
               </p>
               <p class="about-wrapper__info-text">
-                Specializing in serverless architectures, AI integrations with AWS Bedrock, 
-                containerized workloads (ECS/Fargate), and Terraform-managed infrastructure. I build 
-                solutions that balance innovation with operational excellence and cost efficiency.
+                I specialize in <strong>serverless architectures, Terraform-managed infrastructure,
+                and AI integrations with AWS Bedrock</strong>. My focus is balancing innovation with
+                operational excellence, cost control, and security.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -108,20 +107,26 @@
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">PlateAI</h3>
-                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Personal Project - Production AWS Application</p>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Personal Project – Production AWS Application
+                </p>
                 <div>
                   <p class="mb-4">
-                    Production-grade AI nutrition tracking app using AWS Bedrock Claude Vision for 
-                    photo-based meal analysis. Features include AI recipe generation (Vegan/Keto alternatives), 
-                    daily meal planning, and conversational nutrition coaching with context preservation.
+                    <strong>Why it matters:</strong> Demonstrates end-to-end ownership of a real production
+                    serverless system, from Terraform-managed infrastructure to AI-powered application logic,
+                    operating under strict cost and reliability constraints.
                   </p>
                   <p class="mb-4">
-                    Complete infrastructure managed via Terraform with 26 AWS resources (Lambda, 5 DynamoDB 
-                    tables, S3, API Gateway, CloudFront). Engineered for cost efficiency at $1-3/month via 
-                    rate limiting and on-demand pricing.
+                    Production-grade AI nutrition tracking app using AWS Bedrock Claude Vision for
+                    photo-based meal analysis, AI recipe generation, meal planning, and conversational
+                    nutrition coaching with context preservation.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5), Lambda (Python 3.12), DynamoDB, 
+                    Complete infrastructure managed via Terraform with 26 AWS resources. Engineered
+                    for cost efficiency at <strong>$1–3/month</strong> using rate limiting and on-demand pricing.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5), Lambda (Python 3.12), DynamoDB,
                     S3, API Gateway, CloudFront, Terraform, ACM
                   </p>
                 </div>
@@ -146,46 +151,39 @@
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="https://plateai.cloud" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="PlateAI Architecture"
-                      class="img-fluid"
-                      src="assets/plate.svg"
-                    />
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="PlateAI Architecture" class="img-fluid" src="assets/plate.svg" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
-          <!-- Project 2: PlateAI Infrastructure (Terraform) -->
+          <!-- Project 2: PlateAI Infrastructure -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">PlateAI Infrastructure (Terraform)</h3>
-                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Infrastructure as Code - Production Deployment</p>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Infrastructure as Code – Production Deployment
+                </p>
                 <div>
                   <p class="mb-4">
-                    Infrastructure as Code for PlateAI - complete AWS serverless stack managed with Terraform. 
-                    Manages 26 AWS resources including Lambda function, 5 DynamoDB tables, 2 S3 buckets, 
-                    API Gateway, CloudFront distribution, and IAM roles with least-privilege permissions.
+                    Complete AWS serverless stack defined and managed with Terraform, covering
+                    Lambda, DynamoDB, S3, API Gateway, CloudFront, and IAM with least-privilege policies.
                   </p>
                   <p class="mb-4">
-                    Infrastructure was imported from the live production environment with zero downtime and 
-                    zero changes applied, demonstrating ability to bring existing cloud resources under IaC 
-                    management. Complete infrastructure deployment with one command and full teardown capability 
-                    for cost control.
+                    Infrastructure was imported from a live production environment with
+                    <strong>zero downtime and zero changes applied</strong>, demonstrating safe Terraform
+                    adoption on an existing system — a common failure point for teams migrating to IaC.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> Terraform, AWS (Lambda, DynamoDB, S3, API Gateway, CloudFront, 
-                    IAM, CloudWatch), Infrastructure as Code, us-east-1
+                    Enables one-command deployment and full teardown for reproducibility and cost control.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> Terraform, AWS (Lambda, DynamoDB, S3, API Gateway,
+                    CloudFront, IAM, CloudWatch), us-east-1
                   </p>
                 </div>
                 <a
@@ -201,171 +199,113 @@
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="https://github.com/AaronWhiteTX/Plateai-terraform" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Terraform Infrastructure"
-                      class="img-fluid"
-                      src="assets/terraform.png"
-                    />
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Terraform Infrastructure" class="img-fluid" src="assets/terraform.png" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
-          <!-- Project 3: KaiMate NZ -->
+          <!-- Project 3: KaiMate -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">KaiMate NZ</h3>
-                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Contract Cloud Engineer - Production Infrastructure (Team Project, Equity Partner)</p>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Contract Cloud Engineer – Production Infrastructure (Equity Partner)
+                </p>
                 <div>
                   <p class="mb-4">
-                    Food ordering SaaS platform where I designed and deployed production-grade AWS 
-                    infrastructure as the cloud engineer. Built Multi-AZ RDS PostgreSQL architecture 
-                    with enhanced monitoring, ECS container orchestration with CloudWatch Container 
-                    Insights, and multi-environment VPC design with proper subnet isolation.
+                    Designed and deployed production-ready AWS infrastructure for a food ordering SaaS,
+                    including Multi-AZ RDS PostgreSQL, ECS/Fargate services, and multi-environment VPC design.
                   </p>
                   <p class="mb-4">
-                    Deployed 3 RDS instances (1 production Multi-AZ + 2 staging) with KMS encryption 
-                    and CloudWatch logging. Configured 2 VPCs (production 10.20.0.0/16 + staging 
-                    172.31.0.0/16) with private subnets across multiple availability zones. Set up 
-                    ECS cluster with container performance monitoring and CloudTrail/Config for 
-                    compliance auditing. Infrastructure work led to equity partnership offer.
+                    Infrastructure decisions and execution directly led to a
+                    <strong>5% equity partnership offer</strong>, reflecting trust in production readiness
+                    and architectural judgment.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> RDS PostgreSQL (Multi-AZ), ECS (Fargate), VPC, 
-                    CloudWatch (Container Insights + RDS monitoring), KMS, CloudTrail, AWS Config, 
-                    ap-southeast-2
+                    <strong>Tech Stack:</strong> RDS PostgreSQL (Multi-AZ), ECS (Fargate), VPC,
+                    CloudWatch, KMS, CloudTrail, AWS Config, ap-southeast-2
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://www.linkedin.com/company/kaimate-nz/"
-                >
-                  View Company
-                </a>
+                <span class="cta-btn text-color-main">Private Client Project</span>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <img
-                    alt="KaiMate Architecture"
-                    class="img-fluid"
-                    src="assets/Kaimate.svg"
-                  />
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="KaiMate Architecture" class="img-fluid" src="assets/Kaimate.svg" />
                 </div>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
           <!-- Project 4: MHA Tracker -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">MHA Tracker</h3>
-                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Contract Cloud Engineer - Multi-Tenant SaaS (Team Project)</p>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Contract Cloud Engineer – Multi-Tenant SaaS
+                </p>
                 <div>
                   <p class="mb-4">
-                    Housing allowance tracking SaaS application where I implemented serverless backend 
-                    infrastructure as a solutions architect contractor. Built event-driven OCR pipeline 
-                    using Lambda and Textract for receipt processing, designed multi-tenant data architecture 
-                    with DynamoDB, and integrated subscription webhooks for payment processing.
+                    Built a serverless OCR processing pipeline using Lambda and Textract to automate
+                    housing allowance receipt processing for a multi-tenant SaaS platform.
                   </p>
                   <p class="mb-4">
-                    Designed and deployed AppSync GraphQL API with 4 DynamoDB tables for multi-tenant data 
-                    isolation. Implemented S3 event-driven Lambda pipeline triggering Textract OCR for automated 
-                    receipt text extraction. Built subscription webhook Lambda for MemberPress payment integration. 
-                    Configured IAM roles with least-privilege access for Lambda-to-DynamoDB and Lambda-to-Textract operations.
+                    Automation significantly reduced manual review time while maintaining
+                    <strong>95%+ document extraction accuracy</strong> through validation workflows.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> AppSync GraphQL, Lambda (Node.js 20.x), DynamoDB (4 tables), 
-                    S3, Amazon Textract, IAM, CloudWatch, us-west-2
+                    <strong>Tech Stack:</strong> AppSync GraphQL, Lambda, DynamoDB, S3, Amazon Textract,
+                    IAM, CloudWatch, us-west-2
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://www.linkedin.com/company/mha-tracker/"
-                >
-                  View Company
-                </a>
+                <span class="cta-btn text-color-main">Private Client Project</span>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <img
-                    alt="MHA Tracker Architecture"
-                    class="img-fluid"
-                    src="assets/MHA.svg"
-                  />
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="MHA Tracker Architecture" class="img-fluid" src="assets/MHA.svg" />
                 </div>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
           <!-- Project 5: PhotoSnap Pro -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">PhotoSnap Pro</h3>
-                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">Personal Project - Serverless Photo Platform</p>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Personal Project – Serverless Photo Platform
+                </p>
                 <div>
                   <p class="mb-4">
-                    Production serverless photo gallery with secure authentication, direct S3 uploads via 
-                    pre-signed URLs, and viral sharing through branded viewer pages with URL shortening 
-                    for mobile compatibility.
+                    Designed to explore secure client-side uploads and viral sharing patterns while
+                    maintaining strict IAM isolation and low operational overhead.
                   </p>
                   <p class="mb-4">
-                    Implemented pre-signed URL pattern for secure client-side S3 access, per-user IAM roles 
-                    with folder-level isolation, and URL shortener service with 6-character IDs and DynamoDB 
-                    TTL for automatic expiration. Native mobile share sheet integration for iOS/Android.
+                    Implemented pre-signed S3 uploads, per-user IAM isolation, and a DynamoDB-backed
+                    URL shortener with TTL-based expiration for automatic cleanup.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> Node.js 20.x, Lambda (2 functions), DynamoDB (2 tables), 
-                    S3, API Gateway HTTP, CloudFront, Route 53, IAM, STS
+                    <strong>Tech Stack:</strong> Node.js, Lambda, DynamoDB, S3, API Gateway,
+                    CloudFront, Route 53, IAM, STS
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://photosnap.pro"
-                >
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://photosnap.pro">
                   View Live
                 </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/AaronWhiteTX/PhotoSnap-Pro"
-                >
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                  href="https://github.com/AaronWhiteTX/PhotoSnapPro">
                   Source Code
                 </a>
               </div>
@@ -373,73 +313,50 @@
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="https://photosnap.pro" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="PhotoSnap Pro Architecture"
-                      class="img-fluid"
-                      src="assets/photo.svg"
-                    />
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="PhotoSnap Pro Architecture" class="img-fluid" src="assets/photo.svg" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
         </div>
       </div>
     </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
+    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper__text">Interested in working together?</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:aaronwhiteTX@gmail.com"
-            >Get In Touch</a
-          >
+          <a class="cta-btn cta-btn--resume" href="mailto:aaronwhiteTX@gmail.com">
+            Get In Touch
+          </a>
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
       <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://www.linkedin.com/in/aaron-white-5a6a2686/" target="_blank">
+          <a href="https://www.linkedin.com/in/aaron-white-5a6a2686/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/AaronWhiteTX" target="_blank">
+          <a href="https://github.com/AaronWhiteTX" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
-
         <hr />
-
-        <p class="footer__text">
-          © 2025 - Aaron White
-        </p>
+        <p class="footer__text">© 2025 - Aaron White</p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
   </body>
-
 </html>
