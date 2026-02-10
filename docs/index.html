@@ -11,8 +11,8 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <title>Aaron White | Cloud Engineer</title>
-    <meta name="keywords" content="AaronWhiteTX, Aaron White, AWS, Cloud Engineer, Solutions Architect, Terraform, Bedrock" />
-    <meta name="description" content="Aaron White | Cloud Engineer specializing in AWS serverless architectures and production infrastructure" />
+    <meta name="keywords" content="AaronWhiteTX, Aaron White, AWS, Cloud Engineer, Solutions Architect, Terraform, Bedrock, DevOps, CI/CD, Kubernetes" />
+    <meta name="description" content="Aaron White | Cloud Engineer specializing in AWS serverless architectures, DevOps, and production infrastructure" />
 
     <link
       rel="stylesheet"
@@ -76,8 +76,8 @@
               </p>
               <p class="about-wrapper__info-text">
                 I specialize in <strong>serverless architectures, Terraform-managed infrastructure,
-                and AI integrations with AWS Bedrock</strong>. My focus is balancing innovation with
-                operational excellence, cost control, and security.
+                CI/CD pipelines, and AI integrations with AWS Bedrock</strong>. My focus is balancing 
+                innovation with operational excellence, cost control, and security.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -123,7 +123,7 @@
                   </p>
                   <p class="mb-4">
                     Complete infrastructure managed via Terraform with 26 AWS resources. Engineered
-                    for cost efficiency at <strong>$1–3/month</strong> using rate limiting and on-demand pricing.
+                    for cost efficiency at <strong>\$1–3/month</strong> using rate limiting and on-demand pricing.
                   </p>
                   <p class="mb-4">
                     <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5), Lambda (Python 3.12), DynamoDB,
@@ -164,9 +164,9 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">PlateAI Infrastructure (Terraform)</h3>
+                <h3 class="project-wrapper__text-title">PlateAI Infrastructure (Terraform + CI/CD)</h3>
                 <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
-                  Infrastructure as Code – Production Deployment
+                  Infrastructure as Code – Production Deployment with Automated Pipeline
                 </p>
                 <div>
                   <p class="mb-4">
@@ -179,11 +179,12 @@
                     adoption on an existing system — a common failure point for teams migrating to IaC.
                   </p>
                   <p class="mb-4">
-                    Enables one-command deployment and full teardown for reproducibility and cost control.
+                    Integrated CI/CD pipeline automates infrastructure validation and deployment,
+                    ensuring consistent and repeatable releases with proper state management.
                   </p>
                   <p class="mb-4">
-                    <strong>Tech Stack:</strong> Terraform, AWS (Lambda, DynamoDB, S3, API Gateway,
-                    CloudFront, IAM, CloudWatch), us-east-1
+                    <strong>Tech Stack:</strong> Terraform, GitHub Actions, AWS (Lambda, DynamoDB, S3, 
+                    API Gateway, CloudFront, IAM, CloudWatch), us-east-1
                   </p>
                 </div>
                 <a
@@ -208,7 +209,57 @@
             </div>
           </div>
 
-          <!-- Project 3: KaiMate -->
+          <!-- Project 3: Ultimate CI/CD Pipeline -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Ultimate CI/CD Pipeline</h3>
+                <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 15px;">
+                  Personal Project – DevOps & GitOps
+                </p>
+                <div>
+                  <p class="mb-4">
+                    <strong>Why it matters:</strong> Demonstrates end-to-end CI/CD pipeline design
+                    with GitOps principles, automated testing, security scanning, and Kubernetes
+                    deployment without manual intervention.
+                  </p>
+                  <p class="mb-4">
+                    Complete pipeline from code commit to production deployment. Jenkins builds and
+                    tests Java application, SonarQube scans for security vulnerabilities, Docker
+                    image pushed to registry, ArgoCD automatically syncs and deploys to Kubernetes.
+                  </p>
+                  <p class="mb-4">
+                    Solved complex Kubernetes API schema conflict between OLM PackageServer and
+                    ArgoCD by debugging APIServices and identifying root cause at the cluster level.
+                  </p>
+                  <p class="mb-4">
+                    <strong>Tech Stack:</strong> Jenkins, SonarQube, Docker, ArgoCD, Kubernetes,
+                    Minikube, Maven, AWS EC2, Git
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/AaronWhiteTX/ultimate-cicd-pipeline"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/AaronWhiteTX/ultimate-cicd-pipeline" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="CI/CD Pipeline Architecture" class="img-fluid" src="assets/cicd.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: KaiMate -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
@@ -244,7 +295,7 @@
             </div>
           </div>
 
-          <!-- Project 4: MHA Tracker -->
+          <!-- Project 5: MHA Tracker -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
@@ -279,7 +330,7 @@
             </div>
           </div>
 
-          <!-- Project 5: PhotoSnap Pro -->
+          <!-- Project 6: PhotoSnap Pro -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
