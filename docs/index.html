@@ -75,7 +75,7 @@
                 scalable, cost-optimized systems using Infrastructure as Code.
               </p>
               <p class="about-wrapper__info-text">
-                I specialize in <strong>containerized & serverless architectures, Terraform-managed infrastructure,
+                I specialize in <strong>serverless architectures, Terraform-managed infrastructure,
                 CI/CD pipelines, and AI integrations with AWS Bedrock</strong>. My focus is balancing 
                 innovation with operational excellence, cost control, and security.
               </p>
@@ -123,7 +123,7 @@
                   </p>
                   <p class="mb-4">
                     Complete infrastructure managed via Terraform with 26 AWS resources. Engineered
-                    for cost efficiency at <strong>$1–3/month</strong> using rate limiting and on-demand pricing.
+                    for cost efficiency at <strong>\$1–3/month</strong> using rate limiting and on-demand pricing.
                   </p>
                   <p class="mb-4">
                     <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5), Lambda (Python 3.12), DynamoDB,
@@ -170,13 +170,13 @@
                 </p>
                 <div>
                   <p class="mb-4">
-                    Complete AWS serverless stack defined and managed with Terraform, covering
-                    Lambda, DynamoDB, S3, API Gateway, CloudFront, and IAM with least-privilege policies.
+                    <strong>Why it matters:</strong> Demonstrates safe Terraform adoption on a live 
+                    production system, a common failure point for teams migrating to Infrastructure 
+                    as Code. Imported existing resources with zero downtime and zero drift.
                   </p>
                   <p class="mb-4">
-                    Infrastructure was imported from a live production environment with
-                    <strong>zero downtime and zero changes applied</strong>, demonstrating safe Terraform
-                    adoption on an existing system — a common failure point for teams migrating to IaC.
+                    Complete AWS serverless stack defined and managed with Terraform, covering
+                    Lambda, DynamoDB, S3, API Gateway, CloudFront, and IAM with least-privilege policies.
                   </p>
                   <p class="mb-4">
                     Integrated CI/CD pipeline automates infrastructure validation and deployment,
@@ -229,8 +229,8 @@
                     image pushed to registry, ArgoCD automatically syncs and deploys to Kubernetes.
                   </p>
                   <p class="mb-4">
-                    Solved complex Kubernetes API schema conflict between OLM PackageServer and
-                    ArgoCD by debugging APIServices and identifying root cause at the cluster level.
+                    Multi-cloud architecture with Jenkins and SonarQube hosted on AWS EC2, 
+                    and Kubernetes cluster running ArgoCD for automated GitOps deployment.
                   </p>
                   <p class="mb-4">
                     <strong>Tech Stack:</strong> Jenkins, SonarQube, Docker, ArgoCD, Kubernetes,
@@ -252,7 +252,7 @@
                 <a rel="noreferrer" href="https://github.com/AaronWhiteTX/ultimate-cicd-pipeline" target="_blank">
                   <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt">
-                    <img alt="CI/CD Pipeline Architecture" class="img-fluid" src="assets/architecture.png" />
+                    <img alt="CI/CD Pipeline Architecture" class="img-fluid" src="assets/cicd.png" />
                   </div>
                 </a>
               </div>
@@ -268,6 +268,11 @@
                   Contract Cloud Engineer – Production Infrastructure (Equity Partner)
                 </p>
                 <div>
+                  <p class="mb-4">
+                    <strong>Why it matters:</strong> Real client work that resulted in an equity 
+                    partnership offer, proving production-ready architecture decisions and the ability 
+                    to deliver infrastructure that stakeholders trust with their business.
+                  </p>
                   <p class="mb-4">
                     Designed and deployed production-ready AWS infrastructure for a food ordering SaaS,
                     including Multi-AZ RDS PostgreSQL, ECS/Fargate services, and multi-environment VPC design.
@@ -305,6 +310,11 @@
                 </p>
                 <div>
                   <p class="mb-4">
+                    <strong>Why it matters:</strong> Demonstrates practical automation that directly 
+                    reduces operational costs. Replaced manual document review with intelligent OCR 
+                    processing while maintaining high accuracy for compliance requirements.
+                  </p>
+                  <p class="mb-4">
                     Built a serverless OCR processing pipeline using Lambda and Textract to automate
                     housing allowance receipt processing for a multi-tenant SaaS platform.
                   </p>
@@ -339,6 +349,11 @@
                   Personal Project – Serverless Photo Platform
                 </p>
                 <div>
+                  <p class="mb-4">
+                    <strong>Why it matters:</strong> Demonstrates secure file handling patterns 
+                    including pre-signed uploads, per-user isolation, and automatic resource cleanup. 
+                    Common requirements in production systems handling user-generated content.
+                  </p>
                   <p class="mb-4">
                     Designed to explore secure client-side uploads and viral sharing patterns while
                     maintaining strict IAM isolation and low operational overhead.
@@ -411,5 +426,3 @@
     <script defer type="module" src="index.js"></script>
   </body>
 </html>
-
-
